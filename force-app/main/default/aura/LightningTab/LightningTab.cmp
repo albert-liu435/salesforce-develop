@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable">
+    <!--lightning tab-->
+    
+   <!-- <aura:attribute name="whom" type="String" default="world"></aura:attribute>
+    Hello {!v.whom} -->
+
+    <h1>Lightning Component Tab</h1>
+
+</aura:component>	
+
