@@ -1,5 +1,0 @@
-<aura:component>
-    <aura:import library="lightning:alert" property="LightningAlert" />
-    <lightning:button onclick="{! c.openAlert }" label="Open Alert"/>
-</aura:component>
-

@@ -4,12 +4,12 @@
     <baseObject>FlowInterviewLog</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>了解将执行哪些流，以及用户完成每个流屏幕所需的时间。</description>
+    <description>Find out which flows get executed and how long users take to complete each flow screen.</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>FlowInterviewLogs</relationship>
     </join>
-    <label>屏幕流</label>
+    <label>Screen Flows</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -76,7 +76,7 @@
             <field>FlowNamespace</field>
             <table>FlowInterviewLog</table>
         </columns>
-        <masterLabel>流采访日志</masterLabel>
+        <masterLabel>Flow Interview Logs</masterLabel>
     </sections>
     <sections>
         <columns>
@@ -129,6 +129,6 @@
             <field>ElementDurationInMinutes</field>
             <table>FlowInterviewLog.FlowInterviewLogs</table>
         </columns>
-        <masterLabel>流采访日志项目</masterLabel>
+        <masterLabel>Flow Interview Log Entries</masterLabel>
     </sections>
 </ReportType>

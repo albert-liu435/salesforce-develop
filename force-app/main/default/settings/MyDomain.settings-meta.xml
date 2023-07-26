@@ -2,11 +2,11 @@
 <MyDomainSettings xmlns="http://soap.sforce.com/2006/04/metadata">
     <canOnlyLoginWithMyDomainUrl>false</canOnlyLoginWithMyDomainUrl>
     <doesApiLoginRequireOrgDomain>false</doesApiLoginRequireOrgDomain>
-    <domainPartition>none</domainPartition>
+    <domainPartition>trailblaze</domainPartition>
     <enableNativeBrowserForAuthOnAndroid>false</enableNativeBrowserForAuthOnAndroid>
     <enableNativeBrowserForAuthOnIos>false</enableNativeBrowserForAuthOnIos>
-    <myDomainName>d2w000009ygttea4-dev-ed</myDomainName>
-    <myDomainSuffix>MySalesforceLimited</myDomainSuffix>
+    <myDomainName>curious-fox-mw7xz0-dev-ed</myDomainName>
+    <myDomainSuffix>MySalesforce</myDomainSuffix>
     <redirectForceComSiteUrls>true</redirectForceComSiteUrls>
     <redirectPriorMyDomain>true</redirectPriorMyDomain>
     <use3rdPartyCookieBlockingCompatibleHostnames>true</use3rdPartyCookieBlockingCompatibleHostnames>
