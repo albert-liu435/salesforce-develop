@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+		<lightning:notificationsLibrary aura:id="notifLib"/>
+    <lightning:button name="notice" label="Show Notice" onclick="{!c.handleShowNotice}"/>
+
+    <lightning:button name="toast" label="Show Toast" onclick="{!c.handleShowToast}"/>
+
+<div class="slds-media__body"> 
+		<div>
+			<lightning:button label="Search" 
+											onclick="{!c.doSomething}"/>
+		</div>
+		<div>
+			<lightning:button label="Download" iconName="utility:download" 
+											onclick="{!c.doSomething2}"/>
+		</div>
+		<div>
+
+			<lightning:buttonIcon iconName="utility:settings"
+													onclick="{!c.doSomething3}"
+													alternativeText="Settings"/>
+		</div>
+</div>
+
+
+
+</aura:component>	

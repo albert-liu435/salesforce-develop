@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="messageAttribute" type="String" default="test"/>
+		<!-- 注册事件 -->
+    <aura:registerEvent name="componentEvent" type="c:messageEvt"/>
+		<!-- 进行初始化操作,进行触发事件 -->
+    <aura:handler name="init" value="{!this}" action="{!c.handlerInit}"/>
+    <aura:handler name="change" value="{!v.messageAttribute}" action="{!c.handlerMessageChange}"/>
+		<!-- 处理事件 -->
+    <aura:handler name="componentEvent" event="c:messageEvt" action="{!c.handlerMessageEvt}" phase="bubble"/>
+
+
+		<div>
+
+		</div>
+		<div>
+			自定义事件
+		</div>
+		<div>
+			
+		</div>
+</aura:component>
