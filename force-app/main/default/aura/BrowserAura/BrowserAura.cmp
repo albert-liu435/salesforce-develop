@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+	<div>
+    {!$Browser.isTablet}
+	</div>
+<div>
+	{!$Browser.isPhone}
+</div>
+<div>
+	{!$Browser.isAndroid}
+</div>
+
+<div>
+	{!$Browser.formFactor}
+</div>
+
+
+<div>
+	<lightning:button variant="brand" label="Browser.formFactor" title="Browser.formFactor" onclick="{!c.checkBrowser}" />
+</div>
+
+
+</aura:component>

@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+<!-- https://salesforceblue.com/using-external-javascript-libraries-in-aura-component/ -->
+
+<!-- https://webkul.com/blog/using-external-javascript-library-method-lightning-component/ -->
+
+<!-- <img src="{!$Resource.svgIcon+'/img/loading.gif'}" style="width:50px"/> -->
+
+
+<ltng:require scripts = "{!$Resource.jQuery}"></ltng:require>
+
+<lightning:button variant="neutral" label="Click Me!" title="Click Me" onclick="{! c.clickHandler }"/>
+
+<div id="myDiv" class="myDiv">
+    Success is the sum of small efforts, repeated.
+</div>
+
+
+</aura:component>	
