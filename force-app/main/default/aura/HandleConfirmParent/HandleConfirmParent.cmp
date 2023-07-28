@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+		<!-- 默认为false,设置为true -->
+		<aura:attribute name = "openConfirmation" type = "Boolean" default="false" />
+
+		<!-- 按钮 -->
+		<lightning:button variant="brand"
+											label="Open Modal/PopUp Box?"
+											title="Open Modal/PopUp Box?"
+											onclick="{!c.openModel}" />
+
+			<!-- 将openConfirmation的属性值传递给子组件 -->
+		<c:HandleConfirmChild handleConfirm="{!c.getMessage}"
+						isModalOpen="{!v.openConfirmation}"
+						title="Confirmation"
+						modalBody="Do you want to Continue?" />
+
+</aura:component>	

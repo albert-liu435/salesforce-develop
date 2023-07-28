@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <p>Parent component calls aura:method in child component</p>
+
+    <c:AuraAsynchronousMethod aura:id="child" />
+    
+    <lightning:button label="Call aura:method (server trip) in child component"
+        onclick="{! c.callAuraMethodServerTrip}" />
+</aura:component>

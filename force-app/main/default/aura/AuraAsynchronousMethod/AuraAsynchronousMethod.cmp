@@ -1,0 +1,8 @@
+<aura:component controller="SimpleServerSideController">
+    <aura:method name="echo" description="Sample method with server-side call">
+			<!-- 定义属性为函数 -->
+			<aura:attribute name="callback" type="Function" />
+    </aura:method>
+    
+    <p>This component has an aura:method definition.</p>
+</aura:component>

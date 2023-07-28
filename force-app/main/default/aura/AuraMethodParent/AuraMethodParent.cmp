@@ -1,0 +1,19 @@
+<!-- https://blog.csdn.net/itsme_web/article/details/127313256 -->
+
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+		<!-- 默认为从父组件的String -->
+		<aura:attribute name="message" type="String" default="Hello from parent!"/>
+		<!-- 引入子组件 -->
+		<c:AuraMethodChild aura:id="childComponent"/>
+
+		<div class="slds-m-around_xx-large">
+
+		<lightning:button variant="brand" label="Call Aura Method" onclick="{!c.callAuraMethod}" />
+
+		<BR></BR> <BR></BR>
+
+		<p>{!v.message}</p>
+		</div> 
+
+</aura:component>	

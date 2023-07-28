@@ -1,0 +1,4 @@
+<aura:component>
+	<!-- 注册定义事件 -->
+	<aura:registerEvent name="sampleComponentEvent" type="c:messageEvt"/>
+</aura:component>	
