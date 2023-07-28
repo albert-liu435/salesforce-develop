@@ -301,6 +301,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Creating_Components</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Sample_Data_Import</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>

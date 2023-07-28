@@ -1,0 +1,13 @@
+<!--c:nestedComponents-->
+<!-- https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_composition.htm -->
+<aura:component implements="flexipage:availableForAllPageTypes">
+	<aura:attribute name="passthrough" type="String" default="passed attribute"/>
+
+    Observe!  Components within components!
+
+    <c:helloHTML/>
+
+    <c:helloAttributes whom="component composition"/>
+
+		<c:helloAttributes whom="{#v.passthrough}"/>
+</aura:component>

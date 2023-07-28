@@ -445,6 +445,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Creating_Components</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Sample_Data_Import</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>

@@ -1,5 +1,3 @@
-<!-- https://MyDomainName.lightning.force.com/<namespace>/<appName>.app. -->
-
 <aura:application extends="force:slds">
     <lightning:layout>
         <lightning:layoutItem padding="around-large">
