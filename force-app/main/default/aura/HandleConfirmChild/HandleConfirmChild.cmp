@@ -5,7 +5,6 @@
     <aura:attribute name="modalBody" type="String" description="Body of the popup" />
 		<aura:attribute name="cancelLabel" type="String" default="Cancel" description="Label for cancel button" />
 		<aura:attribute name="confirmLabel" type="String" default="Continue" description="Label for OK button" />
-		<!-- 接受父组件的传值 -->
 		<aura:attribute name="isModalOpen" type="Boolean" default="false" description="Flag used to toggle popup" />
 			
     <aura:if isTrue="{!v.isModalOpen}">

@@ -3,4 +3,4 @@
                  access="public">
         <aura:attribute name="Name" type="String" default="Wilson"/>
     </aura:method>
-</aura:component>	
+</aura:component>

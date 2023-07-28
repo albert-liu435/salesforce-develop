@@ -14,4 +14,4 @@
 						title="Confirmation"
 						modalBody="Do you want to Continue?" />
 
-</aura:component>	
+</aura:component>

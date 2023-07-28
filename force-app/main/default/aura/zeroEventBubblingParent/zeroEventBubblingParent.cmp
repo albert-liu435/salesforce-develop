@@ -1,0 +1,9 @@
+<!-- https://www.cnblogs.com/zero-zyq/p/9313371.html -->
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:handler name="bubblingEvent" event="c:zeroCompEvent" action="{!c.handleBubbling}"/>
+    <div class="parent">
+        <c:zeroEventBubblingChild>
+            <c:zeroEventBubblingGrandChild />
+        </c:zeroEventBubblingChild>
+    </div>
+</aura:component>

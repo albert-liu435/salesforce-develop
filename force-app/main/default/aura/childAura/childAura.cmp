@@ -1,0 +1,14 @@
+<!--Child component-->
+<aura:component>
+    <aura:attribute name="childDisplayMonth" type="String" default="child"/>    
+    <div class="slds-p-top--large">
+        <lightning:layout multipleRows="false">
+            <lightning:layoutItem size="4" padding="around-small">
+                displayMonth in child: {!v.childDisplayMonth}
+            </lightning:layoutItem>   
+            <lightning:layoutItem size="4" padding="around-small">
+                <lightning:button label="childApply" onclick="{!c.applyHandle}" disabled="false" />
+            </lightning:layoutItem>  
+        </lightning:layout>       
+    </div>
+</aura:component>

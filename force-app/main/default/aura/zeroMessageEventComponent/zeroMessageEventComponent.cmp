@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <aura:attribute name="messageAttribute" type="String" default="test"/>
+		<!-- 注册事件 -->
+    <aura:registerEvent name="zeroComponentEvent" type="c:zeroMessageEvt"/>
+		<!-- 初始化 -->
+    <!-- <aura:handler name="init" value="{!this}" action="{!c.handlerInit}"/> -->
+		<!-- 变更事件 -->
+    <aura:handler name="change" value="{!v.messageAttribute}" action="{!c.handlerMessageChange}"/>
+    <!-- 接受事件并处理 -->
+    <aura:handler name="zeroComponentEvent" event="c:zeroMessageEvt" action="{!c.handlerMessageEvt}" phase="bubble"/>
+
+
+    <div>
+      自定义事件：{!v.messageAttribute}
+    </div>
+
+    <lightning:button variant="brand" label="event button" onclick="{! c.callMethod}"  ></lightning:button>
+</aura:component>

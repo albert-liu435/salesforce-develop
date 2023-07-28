@@ -1,0 +1,60 @@
+<!--Parent component-->
+<!--controller类名：ParentAuraController-->
+<!--force:appHostable: 该组件可作为Lightning Experience的导航元素-->
+<!--flexipage:availabeForAllPageTypes: 可在Lightning App Builder中使用，也做作为Page使用-->
+<!--access=global: 该组件在所有的Orgs中都可以被引用-->
+<aura:component controller="ParentAuraController" 
+                implements="force:appHostable,flexipage:availableForAllPageTypes"
+                access="global">
+
+    <aura:attribute name="displayMonths" type="String[]" />
+    <aura:attribute name="selectedDisplayMonth" type="String" />
+    <aura:attribute name="displayMonth" type="String" default="Last 6 Months"/>
+    <aura:attribute name="read" type="Boolean" default="false" />
+
+    <!--组件初始化操作-->
+    <aura:handler name="init" value="{!this}" action="{!c.handleInit}" />
+    
+    <div class="white">      
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="4" padding="around-small">
+                <!--下拉框选择组件，selectedDisplayMonth为下拉框选择的值，displayMonths为下拉框值列表-->
+                <!--onchange: selectedDisplayMonth值改变时，调用controller.js中changeDisplayMonth函数-->
+                <lightning:select name="displayMonthId" label="Select display months" aura:id="displayMonthId"
+                    value="{!v.selectedDisplayMonth}" required="true" onchange="{!c.changeDisplayMonth}">
+                    <aura:iteration items="{!v.displayMonths}" var="displayMonth">
+                        <option text="{!displayMonth}"></option>
+                    </aura:iteration>
+                </lightning:select>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="6" padding="around-small">
+                <div class="slds-p-top--large">
+                    <!--按钮组件，label为界面显示值；onclick: 点击按钮时触发controller.js中applyHandle函数-->
+                    <!--display: true表示按钮灰掉，无法操作；false表示正常工作-->
+                    <lightning:button label="parentApply" onclick="{!c.applyHandle}" disabled="false" />
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="12" padding="around-small">
+            <li>
+                <!--三元表达式-->
+                <aura:if isTrue="{!v.read}">
+                    you can read it.
+                    <aura:set attribute="else">
+                        you cannot read it.
+                    </aura:set>
+                </aura:if>
+            </li>
+            <li>displayMonth in parent: {!v.displayMonth}</li>
+            </lightning:layoutItem>
+        </lightning:layout>  
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="12" padding="around-small">
+                <!--实例化childAura组件-->
+                <c:childAura childDisplayMonth="{!v.displayMonth}" />
+            </lightning:layoutItem>          
+        </lightning:layout>        
+    </div>
+</aura:component>
