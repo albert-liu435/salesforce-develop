@@ -11,6 +11,12 @@
                 <identifier>c_BrowserAura</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>nestedComponents</componentName>
+                <identifier>c_nestedComponents</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>

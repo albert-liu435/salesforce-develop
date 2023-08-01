@@ -1,0 +1,25 @@
+<!-- https://blog.csdn.net/m0_37373952/article/details/74275998 -->
+
+<aura:component controller="ListViewController" implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="objectName" type="String" default="Account" required="true" />
+    <aura:attribute name="repList" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <table>
+        <thead class="slds-table slds-table--bordered slds-table--cell-buffer">
+            <th>序号</th>
+            <th>Object Name</th>
+            <th>ID</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.repList}" var="item" indexVar="index">
+                <tr>
+                    <td>{!index+1}</td>
+                    <td>{!v.objectName}</td>
+                    <td>{!item.Id}</td>
+                    <td>{!item.Name}</td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>

@@ -1,0 +1,19 @@
+
+<!-- https://developer.salesforce.com/docs/component-library/bundle/lightning:navigation/documentation -->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+	<aura:attribute name="url" type="String"/>
+	<aura:attribute name="pageReference" type="Object"/>
+	<aura:handler name="init" value="{! this }" action="{! c.init }"/>
+	<lightning:navigation aura:id="navService"/>
+	<a href="{!v.url}">Link</a>
+
+	<a href="{!v.url}" onclick="{!c.handleClick}">Link</a>
+	<lightning:button label="Navigate" onclick="{!c.handleClick}"/>
+
+	<div></div>
+	<div>
+		<p><lightning:formattedUrl value="www.salesforce.com" tooltip="Use full domain name" target="_blank" /></p>
+	</div>
+
+
+</aura:component>

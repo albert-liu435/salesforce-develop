@@ -1,0 +1,4 @@
+<design:component>
+   <!--  <design:attribute name="objectName" datasource="Account,Contact,Lead" default="Account" label="Obejct Name" required="true"/> -->
+   <design:attribute name="objectName" datasource="apex://ListViewControllerDynamics" label="Obejct Name" required="true"/>
+</design:component>
