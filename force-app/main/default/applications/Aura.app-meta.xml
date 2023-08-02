@@ -33,6 +33,7 @@
     <tabs>Sample_Data_Import</tabs>
     <tabs>Aura_event</tabs>
     <tabs>Creating_Components</tabs>
+    <tabs>Using_Components</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Aura_UtilityBar</utilityBar>
 </CustomApplication>
