@@ -1,0 +1,6 @@
+<apex:page standardController="Account">
+    <!-- <apex:liveController rerender="myPanel"/> -->
+    <apex:outputPanel id="myPanel" layout="block">
+        <apex:detail subject="{!Account.Id}" title="false"/>
+    </apex:outputPanel>
+</apex:page>

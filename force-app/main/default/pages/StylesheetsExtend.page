@@ -1,3 +1,5 @@
+<!-- /apex/StylesheetsExtend?id=0015j000014jhWrAAI		 -->
+
 <!-- <apex:page>
     <apex:stylesheet value="{!$Resource.TestStyles}"/>
     <apex:outputText value="Styled Text in a sample style class" styleClass="sample"/>
@@ -8,7 +10,7 @@
 
 <!-- /apex/StylesheetsExtend?id=0015j000014jhWrAAI		 -->
 
-<apex:page showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0" standardController="Account" applyBodyTag="False" applyHtmlTag="False">
+<!-- <apex:page showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0" standardController="Account" applyBodyTag="False" applyHtmlTag="False">
 <head>
   <title>{! Account.Name }</title>
   <apex:slds /> 
@@ -63,4 +65,11 @@
       </div>
     </div>
 </body>
+</apex:page> -->
+
+<apex:page>
+    <style type="text/css">
+        [id*=myId] { font-weight: bold; }
+    </style>
+    <apex:outputText id="myId" value="This is way fancy !"/>
 </apex:page>

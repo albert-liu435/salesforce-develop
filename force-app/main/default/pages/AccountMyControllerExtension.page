@@ -1,0 +1,15 @@
+<!-- /apex/AccountMyControllerExtension?id=0015j000014jhWrAAI		 -->
+
+<!-- <apex:page standardController="Account" extensions="myControllerExtension">
+    {!greeting} <p/>
+    <apex:form>
+        <apex:inputField value="{!account.name}"/> <p/>
+        <apex:commandButton value="Save" action="{!save}"/>
+    </apex:form>
+</apex:page> -->
+
+
+<apex:page standardController="Account" 
+    extensions="ExtOne,ExtTwo" showHeader="false">
+    <apex:outputText value="{!foo}" />
+</apex:page>
