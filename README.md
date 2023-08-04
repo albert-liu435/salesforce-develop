@@ -10,7 +10,7 @@ Do you want to deploy a set of changes, or create a self-contained application? 
 
 The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Read All About It
+## Read All About It	
 
 - [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
@@ -22,4 +22,11 @@ The `sfdx-project.json` file contains useful configuration information for your 
 
 地址：https://curious-fox-mw7xz0-dev-ed.trailblaze.lightning.force.com/lightning/setup/ManageUsers/home
 用户：albert.liu435@curious-fox-mw7xz0.com
+密码：Aa876543211234
+
+
+visualforce
+
+地址：https://creative-koala-ceemid-dev-ed.trailblaze.lightning.force.com/lightning/setup/SetupOneHome/home
+用户：albert.liu435@creative-koala-ceemid.com
 密码：Aa876543211234
