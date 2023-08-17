@@ -1,6 +1,6 @@
 <!-- /apex/PageTabOrderHint?id=0015j000014jhWrAAI	 -->
 <apex:page standardController="Account">
-    <apex:form>
+    <apex:form >
     <apex:pageBlock title="Edit Account: {!Account.Name}">
         <apex:pageBlockSection title="Account Details" columns="1">
 					<!-- tabOrderHint：按住tab键可以按照顺序进行选择 -->

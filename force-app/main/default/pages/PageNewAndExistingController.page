@@ -1,9 +1,8 @@
-<!-- https://creative-koala-ceemid-dev-ed--c.trailblaze.vf.force.com/apex/PageNewAndExistingController?id=0015j000014jhWrAAI -->
 <apex:page controller="NewAndExistingController" tabstyle="Account">
-    <apex:form>
+    <apex:form >
         <apex:pageBlock mode="edit">
-            <apex:pageMessages/>
-            <apex:pageBlockSection>
+            <apex:pageMessages />
+            <apex:pageBlockSection >
                 <apex:inputField value="{!account.name}"/>
                 <apex:inputField value="{!account.phone}"/>
                 <apex:inputField value="{!account.industry}"/>

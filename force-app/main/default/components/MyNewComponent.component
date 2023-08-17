@@ -1,5 +1,4 @@
-<!-- https://creative-koala-ceemid-dev-ed--c.trailblaze.vf.force.com/apexcomponent/MyNewComponent -->
-<apex:component>
+<apex:component >
   <apex:attribute name="myattribute" type="String" description="TODO: Describe me"/>
   <!-- Begin Default Content REMOVE THIS -->
   <h1>Congratulations</h1>

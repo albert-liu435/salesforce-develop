@@ -1,4 +1,3 @@
-<!-- /apex/StaticPage		 -->
-<apex:page>
+<apex:page >
 	<apex:image url="{!$Resource.trailhead_logo}" width="50" height="50"/>
 </apex:page>

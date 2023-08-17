@@ -1,6 +1,6 @@
 <!-- /apex/StylesheetsExtend?id=0015j000014jhWrAAI		 -->
 
-<!-- <apex:page>
+<!-- <apex:page >
     <apex:stylesheet value="{!$Resource.TestStyles}"/>
     <apex:outputText value="Styled Text in a sample style class" styleClass="sample"/>
 
@@ -67,7 +67,7 @@
 </body>
 </apex:page> -->
 
-<apex:page>
+<apex:page >
     <style type="text/css">
         [id*=myId] { font-weight: bold; }
     </style>

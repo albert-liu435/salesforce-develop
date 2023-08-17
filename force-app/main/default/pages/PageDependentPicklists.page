@@ -7,7 +7,7 @@
             </apex:pageBlockButtons>
             <apex:pageBlockSection title="Dependent Picklists" columns="2">
             <apex:inputField value="{!account.industry}"/>
-            <apex:inputField value="{!account.subcategories__c}"/>
+            <apex:inputField value="{!account.Subcategories__c}"/>
             </apex:pageBlockSection>
         </apex:pageBlock>
     </apex:form>

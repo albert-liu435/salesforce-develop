@@ -18,6 +18,6 @@
     <apex:detail subject="{!account.ownerId}" relatedList="false" title="false"/> 
 </apex:page> -->
 
-<apex:page>
+<apex:page >
     <h1>Hello World</h1>
 </apex:page>

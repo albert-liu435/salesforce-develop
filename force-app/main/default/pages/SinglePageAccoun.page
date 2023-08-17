@@ -5,17 +5,17 @@
         Click a contact's name to view his or her details.
     </apex:pageBlock>
     <apex:pageBlock title="Contacts">
-        <apex:form>
+        <apex:form >
             <apex:dataTable value="{!account.Contacts}" var="contact" cellPadding="4" 
                                border="1">
-              <apex:column>
+              <apex:column >
                <apex:facet name="header">Name</apex:facet>
-               <apex:commandLink>
+               <apex:commandLink >
                  {!contact.Name}
                  <apex:param name="cid" value="{!contact.id}"/>
                </apex:commandLink> 
               </apex:column>
-              <apex:column>
+              <apex:column >
                <apex:facet name="header">Phone</apex:facet>
                {!contact.Phone}
               </apex:column>

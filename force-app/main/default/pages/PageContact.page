@@ -1,6 +1,6 @@
 <!-- /apex/PageContact?id=0035j0000178ErBAAU	 -->
 <apex:page standardController="Contact">
-    <apex:form>
+    <apex:form >
         <apex:pageBlock title="Quick Edit: {!Contact.Name}">
             <apex:pageBlockSection title="Contact Details" columns="1">
                 <apex:inputField value="{!Contact.Phone}"/>

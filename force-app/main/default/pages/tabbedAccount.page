@@ -1,4 +1,3 @@
-<!-- /apex/tabbedAccount?id=0015j000014jhWrAAI		 -->
 <apex:page standardController="Account" showHeader="true" 
       tabStyle="account" >
    <style>
@@ -8,8 +7,8 @@
          background-image:none}
    </style>
    <apex:tabPanel switchType="client" selectedTab="tabdetails" 
-                  id="AccountTabPanel" tabClass='activeTab' 
-                  inactiveTabClass='inactiveTab'>   
+                  id="AccountTabPanel" tabClass="activeTab" 
+                  inactiveTabClass="inactiveTab">   
       <apex:tab label="Details" name="AccDetails" id="tabdetails">
          <apex:detail relatedList="false" title="true"/>
       </apex:tab>

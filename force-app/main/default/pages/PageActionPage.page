@@ -1,6 +1,5 @@
-<!-- /apex/PageActionPage?id=0015j000014jhWrAAI	 -->
 <apex:page standardController="Account">
-    <apex:form> 
+    <apex:form > 
         <apex:pageBlock title="Hello {!$User.FirstName}!">
             You are viewing the {!account.name} account. <p/>
             Change Account Name: <p/> 

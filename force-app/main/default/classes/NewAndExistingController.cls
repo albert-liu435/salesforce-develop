@@ -1,4 +1,3 @@
-
 public with sharing class NewAndExistingController {
 
     public Account account { get; private set; }

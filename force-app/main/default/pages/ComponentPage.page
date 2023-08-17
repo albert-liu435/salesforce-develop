@@ -2,5 +2,5 @@
 
 <apex:page standardController="Account">
    This is my <i>page</i>. <br/>
-   <c:MyNewComponent/>
+   <c:MyNewComponent />
 </apex:page>
